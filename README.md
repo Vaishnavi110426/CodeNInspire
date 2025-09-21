@@ -18,24 +18,6 @@ Search Functionality – Quickly filter stories or tutorials.
 
 Pure Frontend – No frameworks, only HTML, CSS, JavaScript.
 
-Folder Structure
-CodeNInspire/
-│
-├── index.html          → Landing Page
-├── stories.html        → Stories Page
-├── tutorials.html      → Coding Tutorials Page
-├── css/
-│   └── style.css       → Common CSS
-├── js/
-│   └── script.js       → Modal & Search Functionality
-├── images/             → Story & Tutorial Images
-└── stories/
-    ├── horror.html
-    ├── fantasy.html
-    ├── comedy.html
-    ├── romantic.html
-    ├── moral.html
-    └── adventure.html
 
 How to Use
 
