@@ -1,0 +1,143 @@
+<!<!-- fantasy.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧚 Fantasy Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Georgia, serif; }
+    body {
+      background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0545aac2-256b-4c9e-907a-1b1c8ef246de/dgbmb98-a9b4351c-ced6-40ca-a118-7322d84ff450.png/v1/fill/w_1280,h_718,q_80,strp/fantasy_desktop_wallpaper_0140_by_grimwalds_ai_fantasy_dgbmb98-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMDU0NWFhYzItMjU2Yi00YzllLTkwN2EtMWIxYzhlZjI0NmRlXC9kZ2JtYjk4LWE5YjQzNTFjLWNlZDYtNDBjYS1hMTE4LTczMjJkODRmZjQ1MC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Y0lGafIzksc-5ASCX3fw2e0xILDJFLrjS3zzdIjQlmI') center/cover no-repeat;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      color: #f7f7f7;
+    }
+    h1 { font-size: 32px; margin-bottom: 30px; color: #ffee88; text-shadow: 1px 1px 4px #000; }
+    .story-card {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.7);
+    }
+    .story-card a {
+      color: #fff7c0;
+      font-size: 22px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .story-card a:hover { text-decoration: underline; }
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffaa00;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px black;
+    }
+
+    /* MODALS */
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal:target { display: flex; }
+    .modal-content {
+      background: #222;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(0,0,0,0.9);
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 { color: #ffee88; margin-bottom: 15px; font-size: 26px; }
+    .modal-content p { font-size: 18px; line-height: 1.6; }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 26px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🧚 Fantasy Stories</h1>
+
+  <div class="story-card">
+    <a href="#dragonModal">The Dragon's Wish</a>
+  </div>
+  <div class="story-card">
+    <a href="#treeModal">The Portal Tree</a>
+  </div>
+  <div class="story-card">
+    <a href="#windModal">Wings of the Wind</a>
+  </div>
+
+  <a href="stories.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+
+  <div id="dragonModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Dragon's Wish</h2>
+      <p>
+        In the kingdom of Eldoria, dragons once ruled the skies until they vanished a century ago. One day, a poor farmer named Linan discovered a glowing egg in a cave near the Northern Ridge.<br><br>
+        The egg hatched into a baby dragon, silver-scaled and curious. It spoke in dreams, revealing its name: Syrel. As Linan raised Syrel, he learned that the dragon could grant a single wish — not gold, not power, but a change of destiny.<br><br>
+        War brewed in Eldoria. Linan’s village was marked for destruction. In desperation, he whispered his wish: “Let peace take root.”<br><br>
+        Syrel soared into the sky and roared with light. The battlefield froze. Soldiers dropped their weapons. Even the king fell to his knees in tears.<br><br>
+        Syrel turned to stone atop the mountain, his wish fulfilled. To this day, Eldoria knows peace, and the stone dragon watches silently.
+      </p>
+    </div>
+  </div>
+
+  <div id="treeModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Portal Tree</h2>
+      <p>
+        Deep within the Forest of Echoes stood a tree taller than any castle tower. Its leaves shimmered like stars. Locals feared it, saying it sang at night. But young Mira, a curious girl with mismatched eyes, believed the legends.<br><br>
+        On her twelfth birthday, she climbed it. The tree opened — revealing a swirling portal. Mira stepped through and found a mirror-world, where her fears took shape. Shadows chased her, mimicking her every move.<br><br>
+        To return, she had to face her worst memory — the fire that took her parents. With courage, she walked through the flame-shadow. It turned to light.<br><br>
+        The portal closed. Mira was never the same. She became a healer, helping others face pain with strength — for she knew what it meant to conquer fear in a world of magic.
+      </p>
+    </div>
+  </div>
+
+  <div id="windModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Wings of the Wind</h2>
+      <p>
+        In Zephyria, a city that floated in the clouds, everyone was born with wings—except Alaric. He walked while others soared. But Alaric dreamed bigger than any flyer.<br><br>
+        He built mechanical wings from feathers, wires, and willpower. People laughed. But one day, a storm tore through the city and grounded every winged citizen.<br><br>
+        Except Alaric. His machine wings sliced through the gale. He rescued dozens, carried medicine, and lit hope in their eyes.<br><br>
+        After the storm, the Council of Sky crowned him “Wind’s Heir.” Alaric proved: even if you're born without wings, your spirit can still fly.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

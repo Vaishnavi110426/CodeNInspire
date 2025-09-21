@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🇮🇳 Indian Heroes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      background: url('https://t4.ftcdn.net/jpg/10/40/38/85/360_F_1040388562_oHcTE7FlCiV5FJasr3rhed0MQdXnV1Uq.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .topic-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #0f0e46;
+      background: rgba(255, 255, 255, 0.9);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .detail-box {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .detail-box:hover {
+      background: rgba(255,255,255,0.6);
+      transform: scale(1.02);
+    }
+
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25b1cc;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .modal:target { display: flex; }
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 90%;
+      width: 450px;
+      position: relative;
+      color: #222;
+    }
+
+    .modal-content h3 {
+      margin-bottom: 10px;
+      color: #0f0e46;
+    }
+
+    .modal-content p {
+      line-height: 1.6;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="topic-title">🇮🇳 Indian Great People</h2>
+
+  <a href="#kalamModal" class="detail-box">🚀 A.P.J Abdul Kalam</a>
+  <a href="#gandhiModal" class="detail-box">✌️ Mahatma Gandhi</a>
+  <a href="#patelModal" class="detail-box">🧱 Sardar Patel</a>
+  <a href="#boseModal" class="detail-box">⚔️ Subhash Chandra Bose</a>
+  <a href="#naiduModal" class="detail-box">🎤 Sarojini Naidu</a>
+
+  <a href="topics.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+  <div id="kalamModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🚀 A.P.J Abdul Kalam</h3>
+      <p>Known as the 'Missile Man of India', Dr. A.P.J Abdul Kalam was a brilliant scientist and the 11th President of India. He played a pivotal role in India’s space and missile programs, especially in ISRO and DRDO. He inspired millions with his humility, wisdom, and vision for youth empowerment.</p>
+    </div>
+  </div>
+
+  <div id="gandhiModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>✌️ Mahatma Gandhi</h3>
+      <p>Mohandas Karamchand Gandhi led India’s freedom movement through non-violence and civil disobedience. Revered as the 'Father of the Nation', his philosophy of Satyagraha inspired peace movements across the world.</p>
+    </div>
+  </div>
+
+  <div id="patelModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🧱 Sardar Vallabhbhai Patel</h3>
+      <p>Sardar Patel played a crucial role in uniting 562 princely states post-Independence. Known as the 'Iron Man of India', his leadership and administrative skill helped lay the foundation of modern India’s unity and integrity.</p>
+    </div>
+  </div>
+
+  <div id="boseModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>⚔️ Subhash Chandra Bose</h3>
+      <p>A fearless leader, Bose founded the Indian National Army (INA) to liberate India from British rule. His slogan “Give me blood and I will give you freedom” still resonates with patriotic zeal. He is honored for his revolutionary courage and nationalism.</p>
+    </div>
+  </div>
+
+  <div id="naiduModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🎤 Sarojini Naidu</h3>
+      <p>Known as the 'Nightingale of India', Sarojini Naidu was a poet, freedom fighter, and the first woman governor of independent India. Her eloquence and contribution to women’s rights and Indian politics were remarkable.</p>
+    </div>
+  </div>
+
+</body>
+</html>

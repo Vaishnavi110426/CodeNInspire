@@ -1,0 +1,159 @@
+<!-- comedy.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>😂 Comedy Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Comic Sans MS', sans-serif; }
+    body {
+      background: url('https://images6.alphacoders.com/132/1323308.png') center/cover no-repeat;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      color: #fff;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #ffeb3b;
+      text-shadow: 2px 2px 4px #333;
+    }
+    .story-card {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .story-card a {
+      color: #ffff88;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .story-card a:hover { text-decoration: underline; }
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #fdd835;
+      color: black;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal:target { display: flex; }
+    .modal-content {
+      background: #222;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(0,0,0,0.9);
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 {
+      color: #ffeb3b;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    .modal-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 26px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>😂 Comedy Stories</h1>
+
+  <div class="story-card">
+    <a href="#lazyModal">The Lazy Genius</a>
+  </div>
+  <div class="story-card">
+    <a href="#mirrorModal">The Talking Mirror</a>
+  </div>
+  <div class="story-card">
+    <a href="#mangoModal">Operation Mango</a>
+  </div>
+
+  <a href="stories.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+
+  <div id="lazyModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Lazy Genius</h2>
+      <p>
+        Ravi was the laziest boy in his school, but oddly enough, he was also the smartest. While others worked hard, Ravi worked smart… or avoided work entirely.<br><br>
+        During a school exam, instead of writing answers, he drew a fake snake on his answer sheet. When asked why, he replied, “I wanted to scare the questions away.” The principal gave him detention… but also laughed.<br><br>
+        When a new teacher challenged him to solve a puzzle, Ravi solved it by simply rearranging the question instead of the answer.<br><br>
+        One day, he invented a machine that flipped the TV remote for him without lifting his arm. That invention won a science fair and landed him an internship at a tech firm.<br><br>
+        They say Ravi might rule the world someday… but only if someone brings him the throne.
+      </p>
+    </div>
+  </div>
+
+  <div id="mirrorModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Talking Mirror</h2>
+      <p>
+        Neha bought a mirror from a quirky antique shop. The old shopkeeper warned, “It’s honest. Brutally honest.” She laughed it off.<br><br>
+        The next morning, the mirror said, “You slept with your mouth open again. A mosquito almost moved in.”<br><br>
+        She was stunned. Every day, it commented: “Mismatched socks today? Bold choice.” or “Third snack in an hour? Impressive dedication.”<br><br>
+        One day, she snapped and shouted, “Can’t you be NICE?” The mirror replied, “I reflect you. Be nice to yourself first.”<br><br>
+        Neha learned to laugh at herself, wear those crazy socks proudly, and eventually... gave the mirror its own podcast. It now has 2 million followers.
+      </p>
+    </div>
+  </div>
+
+  <div id="mangoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Operation Mango</h2>
+      <p>
+        Bunty and Chiku, two schoolboys, had one summer goal: steal mangoes from the Principal's giant backyard tree.<br><br>
+        They crafted a master plan—codenamed Operation Mango. Bunty distracted the neighbor’s dog with samosas, while Chiku tried to climb using a rope made of socks.<br><br>
+        Midway up, the socks snapped, and Chiku landed in a puddle. Bunty panicked and rang the bell of the principal's gate — then ran.<br><br>
+        Principal Sharma found Chiku drenched and holding a half-eaten samosa. Instead of scolding, he laughed and handed them two ripe mangoes.<br><br>
+        “Next time,” he said, “just ask. And bring more samosas.”
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
+

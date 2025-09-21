@@ -1,0 +1,166 @@
+<!-- adventure.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🏔️ Adventure Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Verdana', sans-serif; }
+    body {
+      background: url('https://images.stockcake.com/public/c/3/5/c35869b5-a208-4c0a-997f-eeaf425130ac_large/trail-beyond-clouds-stockcake.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #fefefe;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #ffe600;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .story-card {
+      background: rgba(0,0,0,0.65);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.3);
+    }
+    .story-card a {
+      color: #fffa90;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .story-card a:hover {
+      text-decoration: underline;
+    }
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ffae00;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px black;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal:target { display: flex; }
+    .modal-content {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      box-shadow: 0 0 25px rgba(255,165,0,0.5);
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 {
+      color: #ffcc33;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    .modal-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 26px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏔️ Adventure Stories</h1>
+
+  <div class="story-card">
+    <a href="#jungleModal">The Jungle Treasure</a>
+  </div>
+  <div class="story-card">
+    <a href="#desertModal">Across the Desert</a>
+  </div>
+  <div class="story-card">
+    <a href="#voyageModal">Voyage of the Brave</a>
+  </div>
+
+  <a href="stories.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+
+  <div id="jungleModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Jungle Treasure</h2>
+      <p>
+        Deep within the Amazon forest, a legendary map was discovered by a curious girl named Anya. Marked with ancient symbols, it pointed to a treasure buried beneath the roots of the oldest tree on Earth.<br><br>
+
+        Anya gathered her team and embarked on a dangerous journey—surviving venomous snakes, quicksand pits, and storms that bent even the thickest branches. One night, they encountered a tribe guarding the sacred site. Instead of stealing, Anya offered help in preserving their land.<br><br>
+
+        The tribe, moved by her integrity, guided her to the treasure: not gold, but a rare glowing flower that healed diseases. Anya returned not just rich—but remembered as the explorer who respected nature’s secrets.
+      </p>
+    </div>
+  </div>
+
+  <div id="desertModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Across the Desert</h2>
+      <p>
+        In the endless dunes of the Sahara, two brothers set out to find a mythical oasis spoken of in their grandfather’s tales. Their only guide: a torn sketchbook with riddles and constellations.<br><br>
+
+        Days passed with scorching sun, mirages, and scarce water. On the seventh day, one brother fell sick. The other carried him on his back, determined not to leave him behind.<br><br>
+
+        As hope faded, they found the final riddle etched on a rock: “Look where the stars fall to rest.” That night, following a comet’s trail, they stumbled upon the oasis—hidden within a cavern, lush and silent.<br><br>
+
+        The journey tested their courage and bond. What they found wasn’t just water, but wisdom, resilience, and the strength of brotherhood.
+      </p>
+    </div>
+  </div>
+
+  <div id="voyageModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Voyage of the Brave</h2>
+      <p>
+        Captain Rhea, the youngest to lead a ship across the Arctic, sailed with a crew of orphans she raised herself. Their mission: to reach the edge of the world where night meets day.<br><br>
+
+        They faced icebergs, mutinous waves, and bitter cold. But Rhea never lost hope. One stormy night, the ship was nearly crushed between shifting ice. The crew worked together, chanting songs of old sailors to stay warm and alert.<br><br>
+
+        Finally, they reached a place where the sky shimmered in gold and blue—where stars reflected perfectly on the sea. It was said that those who reach there return with clarity of heart.<br><br>
+
+        Rhea and her crew returned, not with riches, but with stories that made even kings weep. Courage, she proved, was the greatest treasure of all.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

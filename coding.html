@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Tutorials</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .topic-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #0f0e46;
+      background: rgba(255, 255, 255, 0.9);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .detail-box {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .detail-box:hover {
+      background: rgba(255,255,255,0.6);
+      transform: scale(1.02);
+    }
+
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25b1cc;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .modal:target { display: flex; }
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 90%;
+      width: 450px;
+      position: relative;
+      color: #222;
+    }
+
+    .modal-content h3 {
+      margin-bottom: 10px;
+      color: #0f0e46;
+    }
+
+    .modal-content p {
+      line-height: 1.6;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="topic-title">💻 Intro Coding</h2>
+
+  <a href="#pythonModal" class="detail-box">🐍 Python: Easy & Powerful Language</a>
+  <a href="#javaModal" class="detail-box">☕ Java: Robust for Android & Web</a>
+  <a href="#cModal" class="detail-box">🔧 C Language: System-Level Power</a>
+  <a href="#htmlModal" class="detail-box">🌐 HTML: Structure of the Web</a>
+  <a href="#cssModal" class="detail-box">🎨 CSS: Styling the Web</a>
+
+  <a href="topics.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+  <div id="pythonModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🐍 Python</h3>
+      <p>Python is a beginner-friendly language known for its simplicity and readability. It's widely used in data science, AI, web development, automation, and scripting. Frameworks like Django and Flask make it powerful for backend development.</p>
+    </div>
+  </div>
+
+  <div id="javaModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>☕ Java</h3>
+      <p>Java is an object-oriented, platform-independent language used in enterprise software, Android apps, and backend systems. Its strong memory management, rich libraries, and tools like Spring and Hibernate make it ideal for complex projects.</p>
+    </div>
+  </div>
+
+  <div id="cModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🔧 C Language</h3>
+      <p>C is a powerful system-level programming language used to build operating systems, device drivers, and embedded systems. It offers direct memory access and is extremely fast and efficient, making it the foundation of many modern languages.</p>
+    </div>
+  </div>
+
+  <div id="htmlModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🌐 HTML</h3>
+      <p>HTML (HyperText Markup Language) is the backbone of all web pages. It structures content using elements and tags like headings, paragraphs, links, and images. HTML5 introduced semantic tags and multimedia capabilities.</p>
+    </div>
+  </div>
+
+  <div id="cssModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h3>🎨 CSS</h3>
+      <p>CSS (Cascading Style Sheets) controls the design and layout of web pages. It handles colors, fonts, spacing, animations, and responsiveness. Frameworks like Tailwind, Bootstrap, and libraries like Flexbox and Grid are widely used.</p>
+    </div>
+  </div>
+
+</body>
+</html>

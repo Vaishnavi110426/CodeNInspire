@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Topics</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body {
+      background: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c') center/cover;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .topic-card {
+      background: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .topic-card:hover {
+      transform: scale(1.02);
+    }
+    .topic-card img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+    h2 { color: #0f0e46; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <a href="stories.html" class="topic-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="book icon" />
+    <div>
+      <h2>📖 Stories</h2>
+      <p>Horror, Fantasy, Comedy, Romantic, Moral, Adventure</p>
+    </div>
+  </a>
+
+  <a href="coding.html" class="topic-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="coding icon" />
+    <div>
+      <h2>💡 Study / Coding</h2>
+      <p>Python, Java, C, HTML, CSS Tutorials</p>
+    </div>
+  </a>
+
+  <a href="bio.html" class="topic-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/197/197419.png" alt="india icon" />
+    <div>
+      <h2>🇮🇳 Indian Heroes</h2>
+      <p>Biographies of Kalam, Gandhi, Patel & more</p>
+    </div>
+  </a>
+</body>
+</html>
+
+

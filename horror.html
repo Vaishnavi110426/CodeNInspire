@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>👻 Horror Stories</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body {
+      background: url('https://c4.wallpaperflare.com/wallpaper/317/59/802/halloween-house-black-brick-castle-illustration-wallpaper-preview.jpg') center/cover no-repeat;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #e8d4d4;
+      background-attachment: fixed;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #ff4444;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .story-card {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .story-card a {
+      color: #ff8888;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .story-card a:hover {
+      text-decoration: underline;
+    }
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4444;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px black;
+    }
+
+    /* MODAL STYLE */
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal:target {
+      display: flex;
+    }
+    .modal-content {
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(0,0,0,0.9);
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 {
+      color: #ff6666;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    .modal-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 26px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👻 Horror Stories</h1>
+
+  <div class="story-card">
+    <a href="#ghostModal">Ghost in the Well</a>
+  </div>
+
+  <div class="story-card">
+    <a href="#hostelModal">The Haunted Hostel</a>
+  </div>
+
+  <div class="story-card">
+    <a href="#callerModal">Midnight Caller</a>
+  </div>
+
+  <!-- BACK BUTTON -->
+  <a href="stories.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+
+  <div id="ghostModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Ghost in the Well</h2>
+      <p>In a quiet village surrounded by dense woods, there was an old well that stood untouched for decades. Locals believed it was cursed—every child warned never to go near it. They said voices echoed from its depths after midnight.<br><br>
+
+      One stormy night, a curious boy named Arjun crept out of his home. With a flashlight and a daredevil heart, he approached the mossy stones. As the wind howled, a faint whisper came from the well: "Help me..."<br><br>
+
+      Arjun looked inside. Nothing. But the whisper grew louder. Terrified yet entranced, he leaned closer—and suddenly, a cold gust pulled him down!<br><br>
+
+      What happened next was never told. But to this day, villagers say the whisper changed. Now, it says, "Join me..."
+      </p>
+    </div>
+  </div>
+
+  <div id="hostelModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Haunted Hostel</h2>
+      <p>The university hostel had been shut down for decades. When a new batch of students was assigned there due to overcrowding, they laughed off the legends—at first.<br><br>
+
+      The halls were silent, but the air was thick. Room 13 was always locked. When Rahul, a prankster, picked the lock one night, the power cut instantly. They heard whispers in Bengali—a language no one among them knew.<br><br>
+
+      That night, his roommate vanished. Police found his bed cold and undisturbed, but his shoes were soaked... with river water. The nearest river? 12 km away.<br><br>
+
+      The hostel was closed again. But the lights in Room 13 flicker every night. Still.
+      </p>
+    </div>
+  </div>
+
+  <div id="callerModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Midnight Caller</h2>
+      <p>Every night at exactly 12:03 AM, Meera’s phone rang. No number. Just “Unknown”. And always the same voice:<br><br>
+
+      “Why did you leave me?”<br><br>
+
+      The voice was familiar—too familiar. It sounded like her childhood best friend, Arya, who died in an accident five years ago.<br><br>
+
+      At first, Meera ignored it. Then the voice began naming events only Arya knew. Their secret treehouse. The torn diary. The blood-red ribbon.<br><br>
+
+      On the seventh night, the voice whispered, “Come to the lake.”<br><br>
+
+      She did. Meera was never seen again. But her phone still rings. At 12:03.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
+

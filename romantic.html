@@ -1,0 +1,170 @@
+<!-- romantic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>💖 Romantic Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+    body {
+      background: url('https://images.stockcake.com/public/d/c/2/dc2a1139-0e55-415c-a65e-b5286b0acc76_large/twilight-love-silhouettes-stockcake.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      color: #fefefe;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #f48fb1;
+      text-shadow: 2px 2px 4px #222;
+    }
+    .story-card {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(255,192,203,0.5);
+    }
+    .story-card a {
+      color: #ffcdd2;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .story-card a:hover {
+      text-decoration: underline;
+    }
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #f06292;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal:target { display: flex; }
+    .modal-content {
+      background: #222;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(255,105,135,0.8);
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 {
+      color: #f48fb1;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    .modal-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 26px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Romantic Stories</h1>
+
+  <div class="story-card">
+    <a href="#lettersModal">Letters in the Rain</a>
+  </div>
+  <div class="story-card">
+    <a href="#benchModal">The Last Bench</a>
+  </div>
+  <div class="story-card">
+    <a href="#umbrellaModal">Her Red Umbrella</a>
+  </div>
+
+  <a href="stories.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+
+  <div id="lettersModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Letters in the Rain</h2>
+      <p>
+        Anaya always loved the rain. But what she loved more were the letters she kept finding at her doorstep, every time it poured. No name. Just initials: “A.”<br><br>
+
+        Each letter told a story, a memory only she and her childhood best friend, Aryan, shared. But Aryan had moved abroad years ago. The handwriting wasn’t his… or was it?<br><br>
+
+        One stormy evening, she left a reply: “Who are you?” The next morning, the answer was scribbled under her door: “I never really left. Look outside.”<br><br>
+
+        There he stood, drenched in the rain, holding a letter and a rose. “Missed one last goodbye. Can I say hello instead?”
+      </p>
+    </div>
+  </div>
+
+  <div id="benchModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Last Bench</h2>
+      <p>
+        Priya and Kabir had been seatmates on the last bench for three years. She was the quiet poet, he was the class clown. No one believed they’d ever get along—until Kabir started finishing her poems when she hesitated.<br><br>
+
+        After graduation, life pulled them to different cities. Years passed. One winter morning, Priya returned to their school, just to feel something familiar.<br><br>
+
+        And there, on the dusty last bench, was a fresh paper. A new poem. In Kabir’s handwriting:<br>
+        “For the poet I once sat beside. May our stanzas never end.”<br><br>
+
+        He stepped out from behind the door, older but still smiling. “Still writing love stories, Priya?”
+      </p>
+    </div>
+  </div>
+
+  <div id="umbrellaModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>Her Red Umbrella</h2>
+      <p>
+        Arjun had never seen anyone dance in traffic—until he saw her. A girl twirling in the rain with a red umbrella, in the middle of a monsoon jam.<br><br>
+
+        Every day after that, he waited at the same stop, hoping she'd appear again. And she did—every Wednesday, with a different-colored umbrella. Except one rainy day, she had none.<br><br>
+
+        So Arjun offered his. She smiled, “You’ve been watching me, haven’t you?”<br><br>
+
+        “Every week,” he replied. “You’re my favorite storm.”<br><br>
+
+        They walked together in the rain. One umbrella. Two hearts.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
+

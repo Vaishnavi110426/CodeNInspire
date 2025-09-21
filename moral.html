@@ -1,0 +1,168 @@
+<!-- moral.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌱 Moral Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+    body {
+      background: url('https://images.stockcake.com/public/c/2/5/c252bdff-0a02-4dec-856d-3d1850e90acd_large/paths-of-choice-stockcake.jpg') center/cover no-repeat;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      color: #fffbe7;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #a3e635;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .story-card {
+      background: rgba(0,0,0,0.65);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    }
+    .story-card a {
+      color: #d4fc79;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .story-card a:hover {
+      text-decoration: underline;
+    }
+    .back-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #7bbf36;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 45px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .modal:target { display: flex; }
+    .modal-content {
+      background: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 90%;
+      width: 600px;
+      color: #fff;
+      box-shadow: 0 0 25px rgba(0,255,100,0.3);
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 {
+      color: #bef264;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    .modal-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-size: 26px;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌱 Moral Stories</h1>
+
+  <div class="story-card">
+    <a href="#woodcutterModal">The Honest Woodcutter</a>
+  </div>
+  <div class="story-card">
+    <a href="#starfishModal">The Boy and the Starfish</a>
+  </div>
+  <div class="story-card">
+    <a href="#emptyPotModal">The Empty Pot</a>
+  </div>
+
+  <a href="stories.html" class="back-btn">⬅</a>
+
+  <!-- MODALS -->
+
+  <div id="woodcutterModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Honest Woodcutter</h2>
+      <p>
+        Once upon a time, a poor woodcutter accidentally dropped his axe into a river. Sitting beside the water, he wept, as it was the only tool he owned.<br><br>
+
+        Suddenly, a divine figure appeared and dove into the water, emerging with a golden axe. “Is this yours?” she asked.<br><br>
+
+        The woodcutter shook his head, “No, mine was old and made of iron.” She smiled and returned with a silver axe. Again, he refused. Finally, she brought up his old iron axe. “That one!” he cried.<br><br>
+
+        Impressed by his honesty, she gifted him all three axes. His honesty changed his life—and taught the village that integrity always brings unexpected rewards.
+      </p>
+    </div>
+  </div>
+
+  <div id="starfishModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Boy and the Starfish</h2>
+      <p>
+        A man walking along a beach noticed a boy throwing starfish into the sea. “Why are you doing that?” he asked.<br><br>
+
+        “The tide is going out. If I don’t throw them back, they’ll die,” the boy replied.<br><br>
+
+        The man looked around. “But there are thousands! You can’t possibly make a difference.”<br><br>
+
+        The boy picked up another starfish, gently tossed it into the waves, and smiled, “I made a difference to that one.”<br><br>
+
+        That day, the man joined him. Small acts can create big change.
+      </p>
+    </div>
+  </div>
+
+  <div id="emptyPotModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">×</a>
+      <h2>The Empty Pot</h2>
+      <p>
+        An emperor once declared he would choose his successor by a simple test. He gave every child a seed and said, “Return in one year with your plant.”<br><br>
+
+        Ping, a kind-hearted boy, nurtured his pot every day, but nothing grew. When he returned a year later, his pot was still empty. Others had large, beautiful plants.<br><br>
+
+        The emperor smiled at Ping. “All seeds I gave were boiled. They couldn’t grow. You were the only one honest enough to return with an empty pot.”<br><br>
+
+        Ping became emperor, proving truthfulness blooms brighter than deceit.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
